@@ -9,7 +9,8 @@ const chatCore = {
     getAxios : (url:string,param:any,callback:Function, error?:Function) =>{
         axios(url)
         .then((response) => {callback(response)})
-        .catch((err) =>{alert("axios통신 중 오류가 발생했습니다.");
+        .catch((err) =>{
+                        //alert("axios통신 중 오류가 발생했습니다.");
                         if(error){
                             error(err)
                         }
@@ -21,7 +22,8 @@ const chatCore = {
             data : param
         })
         .then((response) => {callback(response)})
-        .catch((err) =>{alert("axios통신 중 오류가 발생했습니다.");
+        .catch((err) =>{
+                        //alert("axios통신 중 오류가 발생했습니다.");
                         if(error){
                             error(err)
                         }
@@ -33,7 +35,8 @@ const chatCore = {
             data : param
         })
         .then((response) => {callback(response)})
-        .catch((err) =>{alert("axios통신 중 오류가 발생했습니다.");
+        .catch((err) =>{
+                        //alert("axios통신 중 오류가 발생했습니다.");
                         if(error){
                             error(err)
                         }
@@ -45,7 +48,8 @@ const chatCore = {
             data : param
         })
         .then((response) => {callback(response)})
-        .catch((err) =>{alert("axios통신 중 오류가 발생했습니다.");
+        .catch((err) =>{
+                        //alert("axios통신 중 오류가 발생했습니다.");
                         if(error){
                             error(err)
                         }
